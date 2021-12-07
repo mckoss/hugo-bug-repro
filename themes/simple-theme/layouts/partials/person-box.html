@@ -1,0 +1,18 @@
+{{ "<!-- simple/theme/layouts/partials/person-box.html -->" | safeHTML }}
+
+{{ $exhibitBug := true }}
+
+
+{{ $image := .Resources.GetMatch "images/profile.*" }}
+
+{{ if $exhibitBug }}
+
+  {{ $image.Permalink }}
+
+{{ else }}
+
+  {{ with $image }}
+    {{ $image.Permalink }}
+  {{ end }}
+
+{{ end }}

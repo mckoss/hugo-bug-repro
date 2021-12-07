@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{ "<!-- layouts/people/single.html:main-->" | safeHTML }}
+<section>
+    <main>
+      <h2>{{ .Title }}</h2>
+      {{ partial "person-box" . }}
+    </main>
+</section>
+{{ end }}
