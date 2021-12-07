@@ -1,9 +1,9 @@
 {{ "<!-- simple/theme/layouts/partials/person-box.html -->" | safeHTML }}
 
-{{ $exhibitBug := false }}
+{{ $exhibitBug := true }}
 
 
-{{ $image := .Resources.GetMatch "images/profile.*" }}
+{{ $image := .Resources.GetMatch "missing-file.*" }}
 
 {{ if $exhibitBug }}
 
