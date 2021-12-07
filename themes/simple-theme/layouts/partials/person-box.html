@@ -1,6 +1,6 @@
 {{ "<!-- simple/theme/layouts/partials/person-box.html -->" | safeHTML }}
 
-{{ $exhibitBug := true }}
+{{ $exhibitBug := false }}
 
 
 {{ $image := .Resources.GetMatch "images/profile.*" }}
@@ -13,6 +13,8 @@
 
   {{ with $image }}
     {{ $image.Permalink }}
+  {{ else }}
+    WHERE-IS-THIS-BEING-RENDERED?
   {{ end }}
 
 {{ end }}
