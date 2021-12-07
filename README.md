@@ -1,8 +1,11 @@
 # hugo-bug-repro
 
-Simple repro case for Hugo bug:
+Simple repro case for what I THOUGH was a Hugo bug.
 
 https://github.com/gohugoio/hugo/issues/9250
+
+**I now see that this code could be running in multiple contexts that I did not think
+of.  So - in one case, it was rendering without error, and in another it was not.**
 
 # Steps to reproduce this error
 
